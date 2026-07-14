@@ -134,3 +134,12 @@ print(f"Ігорю треба {album_pages} сторінок щоб вклеїт
 ний бак?
 """
 
+total_distance = 1600
+average_fuel = 9
+tank_fuel = 48
+first_question = (total_distance/100)*average_fuel
+second_question = first_question / tank_fuel
+print(f"Родина зібралася в автомобільну подорож із Харкова в Будапешт. Відстань між цими містами становить {total_distance} км")
+print(f"1) {first_question}л. бензину знадобиться для такої подорожі")
+print(f"2) {int(second_question)} - рази родині необхідно заїхати на заправку під час цієї подорожі, кожного разу заправляючи повний бак")
+

@@ -37,7 +37,16 @@ print(f"Разом Чорне та Азовське море займають {t
 250 449 товарів. На другому та третьому – 222 950 товарів.
 Знайдіть кількість товарів, що розміщені на кожному складі.
 """
-
+werhaus_total = 375291
+first_second_werhaus = 250449
+second_third_werhouse = 222950
+third = werhaus_total - first_second_werhaus
+first = werhaus_total - second_third_werhouse
+second = werhaus_total - first - third
+print(f"Мережа супермаркетів має 3 склади, де всього розміщено {werhaus_total} товарів")
+print(f"На першому складі - {first} товарів")
+print(f"На другому складі - {second} товарів")
+print(f"На третьому складі - {third} товарів")
 
 # task 06
 """
@@ -46,6 +55,7 @@ print(f"Разом Чорне та Азовське море займають {t
 вати необхідно буде півтора року по 1179 грн/місяць. Обчисліть
 вартість комп’ютера.
 """
+
 
 
 # task 07

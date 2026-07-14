@@ -79,5 +79,3 @@ second_book = first_book + 2
 third_book = (first_book + second_book) / 2
 total_price = first_book + second_book + third_book
 print(f"Total price - {total_price}")
-
-g

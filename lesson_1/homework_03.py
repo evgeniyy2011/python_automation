@@ -22,6 +22,12 @@ print(alice_in_wonderland)
 моря становить 37 800 км2. Яку площу займають Чорне та Азов-
 ське моря разом?
 """
+black_sea = 436402
+azov_sea = 37800
+total = black_sea + azov_sea
+print(f"Площа Чорного моря становить {black_sea} км2")
+print(f"Площа Азовського моря становить {azov_sea} км2")
+print(f"Разом Чорне та Азовське море займають {total} км2")
 
 
 # task 05

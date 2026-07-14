@@ -92,6 +92,22 @@ print(" Залишок від ділення 19224 : 9 = ",19224 % 9)
 Торт            1           350 грн
 Вода            3           21 грн
 """
+big_pizza = 4 * 274
+medium_pizza = 2 * 218
+juice = 4 * 35
+cake = 1 * 350
+water = 3 * 21
+
+total = big_pizza + medium_pizza + juice + cake + water
+
+print(f"Піца велика: {big_pizza} грн")
+print(f"Піца середня: {medium_pizza} грн")
+print(f"Сік: {juice} грн")
+print(f"Торт: {cake} грн")
+print(f"Вода: {water} грн")
+print(f"Загальна вартість замовлення становить {total} грн.")
+
+
 
 
 # task 09

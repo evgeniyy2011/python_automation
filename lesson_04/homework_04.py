@@ -42,15 +42,15 @@ print(adwentures_of_tom_sawer)
 # task 04
 """ Виведіть, скількі разів у тексті зустрічається літера "h"
 """
-print((adwentures_of_tom_sawer.lower()).count("h"))
+print(adwentures_of_tom_sawer.count("h"))
 
 
 # task 05
 """ Виведіть, скільки слів у тексті починається з Великої літери?
 """
 counter = 0
-for i in adwentures_of_tom_sawer:
-    if i.istitle():
+for i in adwentures_of_tom_sawer.split():
+    if i[0].isupper():
         counter+=1
 print(counter)
 
@@ -90,4 +90,7 @@ for i in adwentures_of_tom_sawer_sentences:
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
-print(len(adwentures_of_tom_sawer_sentences[-2].split()))
+
+adwentures_of_tom_sawer_sentences.pop()
+print(len(adwentures_of_tom_sawer_sentences[-1].split()))
+

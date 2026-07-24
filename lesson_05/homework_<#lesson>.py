@@ -25,7 +25,7 @@ people_records.insert(0,('Yevhen', 'Poliezhaiev', 35, 'QA Python Automation', 'L
 people_records[1],people_records[5]= people_records[5],people_records[1]
 for i in people_records:
     print(i)
-print(people_records[6][2] >= 30 and people_records[10][2] >= 30 and people_records[13][2] >=30) # you can show one common result from three rows
-#print(f"people with index 6 - {int(people_records[6][2]) >=30}\n people with index 10 - {int(people_records[10][2]) >=30}\n people with index 13 - {int(people_records[13][2]) >=30} ") # or you can show three diferent results from each rows
+# print(people_records[6][2] >= 30 and people_records[10][2] >= 30 and people_records[13][2] >=30) # you can show one common result from three rows
+print(f"people with index 6 - {int(people_records[6][2]) >=30}\npeople with index 10 - {people_records[10][2] >=30}\npeople with index 13 - {people_records[13][2] >=30} ") # or you can show three diferent results from each rows
 
 

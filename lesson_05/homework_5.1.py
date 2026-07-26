@@ -47,7 +47,7 @@ car_data = {
 search_criteria = (2017, 1.6, 36000)
 # рік ≥, об'єм двигуна ≥, ціна ≤
 
-new_dict ={k:val for k, val in car_data.items() if val[1]>= 2017 and val[2] >= 1.6 and val[4]<=36000}
+new_dict ={k:val for k, val in car_data.items() if val[1]>= search_criteria[0] and val[2] >= search_criteria[1] and val[4]<=search_criteria[2]}
 sort_cars = (sorted(new_dict.items(), key = lambda item: item[1][4]))[:5]
 for key, val in sort_cars:
   print({key:val})

@@ -6,17 +6,13 @@
 
 
 def multiplication_table(number):
-    # Initialize the appropriate variable
     multiplier = 1
 
-    # Complete the while loop condition.
     while True:
         result = number * multiplier
-        # десь тут помила, а може не одна
         if  result > 25 or result<=0:
             break
         print (str(number) + "x" + str(multiplier) + "=" + str(result))
-        # Increment the appropriate variable
         multiplier += 1
 
 multiplication_table(3)

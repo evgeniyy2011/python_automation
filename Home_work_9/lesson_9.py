@@ -4,6 +4,9 @@ class Romb:
         self.angle_a = angle_a
 
     def __setattr__(self, key, value):
+        if key != "angle_a" and key != "side":
+            raise TypeError("You can't enter it - any number")
+
         if key == "side":
             if not isinstance(value, int):
                 raise TypeError("Side should be just int.")
@@ -22,5 +25,6 @@ class Romb:
     def __str__(self):
         return f"Romb --->>> sides = {self.side}, Angle A = {self.angle_a}, Angle B = {self.angle_b}"
 
-www = Romb(100, 80)
+www = Romb(100, 179)
+# www.angle_b=1
 print(www)

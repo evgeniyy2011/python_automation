@@ -13,7 +13,7 @@ class Test_time_format:
 
 
 
-    @pytest.mark.parametrize("time, expected",[("10:29 am", "10:29")])
+    @pytest.mark.parametrize("time, expected",[("10:29 am", "10:29"),("11:20 pm", "10:10")])
     def test_converter_time_ver2(self, time:str, expected:str):
 
         with soft_assertions():

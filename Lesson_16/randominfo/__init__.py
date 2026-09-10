@@ -260,9 +260,8 @@ def get_birthdate(startAge = None, endAge = None, _format = "%d %b, %Y"):
 def get_address():
 	full_addr = []
 	addrParam = ['street', 'landmark', 'area', 'city', 'state', 'pincode']
-	for i in range(4, 9):
+	for i in range(4, 10):
 		addrFile = csv.reader(open(full_path('data.csv'), 'r'))
-		print(next(addrFile))
 		allAddrs = []
 		for addr in addrFile:
 			try:

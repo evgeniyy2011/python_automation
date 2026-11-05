@@ -1,0 +1,6 @@
+FROM postgres:latest
+
+ENV POSTGRES_USER=test_user
+ENV POSTGRES_PASSWORD=test_pasword
+ENV POSTGRES_DB=test_db
+# ENV POSTGRES_DB=5434
